@@ -12,16 +12,16 @@ function verifyLoginDetails(){
             if (username.value === ''){
                 error.style.visibility = 'visible';
                 error.textContent = 'username field is blank!';
-            }
-    
-            if (password.value === ''){
+            } else if (password.value === ''){
                 error.style.visibility = 'visible';
                 error.textContent = 'password field is blank!';
             }
         } else {
             error.textContent = 'signing in...';
+            error.style. color = 'green';
             success.style.visibility = 'visible';
             success.style.height = '30px';
+            //success.style.width = '100%';
             success.style.transition = '';
             success.textContent = 'Welcome' + ' ' + username.value + ', ' + 'we are signing you in!';
         }
