@@ -1,5 +1,10 @@
 @media only screen and (max-width: 320px), (max-width: 375px), (max-width: 425px){
+
     body{
-        display: block;
+        background: ;
+    }
+
+    #login-contianer{
+        width: 250px;
     }
 }

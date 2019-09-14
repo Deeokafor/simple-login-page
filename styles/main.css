@@ -16,7 +16,7 @@ body{
 
 [success]{
 	visibility: hidden;
-	transition: all 0.5s;
+	transition: all 0.2s;
 	position: fixed;
 	width: 100%;
 	height: 0px;
