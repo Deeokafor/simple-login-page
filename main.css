@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+	font-family: 'Century Gothic', Verdana, Geneva, Tahoma, sans-serif;
+	outline: 0px solid blue;
+}
+
+body{
+	height: 100vh;
+	display: grid;
+	grid-column-gap: 0;
+	justify-content: center;
+	align-items: center;
+	background: radial-gradient(circle, rgb(95, 252, 95),  rgb(0, 138, 0));
+}
+
+[success]{
+	visibility: hidden;
+	transition: all 0.2s;
+	position: fixed;
+	width: 100%;
+	height: 0px;
+	background-color: #fff;
+	text-align: center;
+	color: green;
+	line-height: 30px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#login-container{
+	display: block;
+	width: 300px;
+	height: 350px;
+	border-radius: 4px;
+	/*-webkit-border-radius: 10 !important;*/
+	box-shadow: 1px 3px 10px 2px rgb(0, 0, 0, 0.2);
+	z-index: 2000;
+	background: #fff;
+}
+
+[login]{
+	background-color: transparent;
+	border-radius: 4px 0px 0px 0px;
+	padding: 24px 24px;
+	color: green;
+	z-index: -1000;
+	/*text-shadow: 0px 0px 10px rgb(0, 0, 0, 0.1);*/
+	border-bottom: 1px solid green;
+}
+
+[login] sup{
+	font-weight: lighter;
+	font-size: 11px;
+	float: right;
+}
+
+[login] sup sup{
+	font-size: 9px;
+}
+
+.label-container{
+	margin: auto;
+	margin-top: 35px;
+	border: 1px solid grey;
+	width: 85%;
+	height: 30px;
+	line-height: 30px;
+}
+
+label{
+	color: darkslategrey;
+	padding-left: 20px;
+	font-size: 13px;
+}
+
+input[type="password"], input[type="text"]{
+	padding-left: 10px;
+	width: 55%;
+	border: 1px solid darkslategrey;
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	font-size: 12px;
+}
+
+input[type="submit"]{
+	border-radius: 4px;
+	display: block;
+	width: 150px;
+	margin: auto;
+	margin-top: 30px;
+	background: linear-gradient(to bottom, rgb(0, 172, 0, 0.9), rgb(0, 134, 0, 0.9));
+	border: 1px solid rgb(1, 114, 1);
+	padding: 7px 20px;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+input[type="submit"]:active{
+	background: rgba(1, 82, 1, 0.9);
+}
+
+[error]{
+	margin: auto;
+	margin-top: 24px;
+	height: 20px;
+	line-height: 18px;
+	width: 74%;
+	border: 0px solid red;
+	background-color: rgb(255, 0, 0, 0.1);
+	border-left-width: 20px;
+	color: red;
+	padding-left: 10px;
+	visibility: hidden;
+	font-size: 10px;
+}
+
+.okay{
+	border: 0px solid green;
+	background-color: rgba(0, 255, 0, 0.1);
+	color: green;
+	border-left-width: 20px;
+	visibility: visible;
+}
+
+[author-space]{
+	position: absolute;
+	padding-left: 10px;
+	font-size: 12px;
+	bottom: 1em;
+	text-align: center;
+	margin: auto;
+	text-shadow: 0px 0px 5px darkslategray;
+}
+
+[author-space] p, a{
+	color: white;
+}
