@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Simple Log-in Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/login_responsive.css" />
-</head>
-<body>
-    <div success>some text</div>
-    <div id="login-container">    
-        <form action="" submit="">
-            <div id="login_header">
-                <h2 login>log-in <sup>a simple log-in page</h2>
-            </div>
-            <div login-body>
-                <div class="label-container">
-                    <label>username:</label>
-                    <input type="text" id="username" placeholder="username or email" autofocus>
-                </div>
-                <div class="label-container">
-                    <label>password:</label>
-                    <input type="password" id="password" placeholder="password">
-                </div>
-
-                <!--display error messages-->
-                <div id="error" class="" error> error ... / signing in...</div>
-
-                <div>
-                    <input type="submit" id="sign-in" value="Sign in">
-                </div>
-            </div>
-        </form>
-    </div>
-    <div author-space>
-        <p author>Built by Okafor-udah Divine &copy; 2019 <a href="#">.github.</a></p>
-    </div>
-    <script src="scripts/main.js"></script>
-</body>
+				<head>
+								<meta charset="utf-8">
+								<meta name="viewport" content="width=device-width, initial-scale=1.0">
+								<meta name="author" content="Divine Okafor-udah">
+								<title>quotes.app</title>
+								<link rel="stylesheet" href="style.css" type="text/css">
+								<script src="script.js"></script>
+								<script src="https://kit.fontawesome.com/6798495f24.js" crossorigin="anonymous"></script>
+				</head>
+				<style>
+								@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500;600;700;800&family=Cormorant+Garamond:wght@600&family=Cormorant:wght@600&family=DM+Serif+Text&family=Karma:wght@500&family=Neuton&family=Quattrocento:wght@400;700&display=swap');
+				</style>
+				<body>
+								<header>
+												<div id="app-name">Quotes</div>
+												<div id="app-details">
+																<ul>
+																				<li>Author: Dee_Okafor</li>
+																				<li><a href="#">Github: github.com/dee okafor<i class="fas fa-link"></i></a></li>
+																				<li><a href="#">Folio: github.io/dee_okafor<i class="fas fa-link"></i></a></li>
+																				<li>Version: 0.1</li>
+																				<li>Description: Wholesome quotes for everyday motivation.</li>
+																				<li>Publish-year: May, 2020.</li>
+																</ul>
+												</div>
+								</header>
+								<main>
+												<span id="quote-open">"</span>
+												<p id="quote">
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel malesuada nisi. Nam odio risus, malesuada sit amet dui ac, laoreet euismod turpis. Fusce at lacinia nibh. Vestibulum eu mi nibh. Nullam tempus nulla vel varius elementum. 
+												</p>
+												<span id="quote-close">"</span>
+												<button id="copy-button">copy<i class="fas fa-copy"></i></button>
+												<span id="copy-action-status">...</span>
+								</main>
+								<footer>
+												<a href="#">.github.</a> || 
+												<a href="#">2020</a>
+								</footer>
+				</body>
 </html>
